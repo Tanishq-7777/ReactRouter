@@ -4,12 +4,14 @@ import { Movie } from "./pages/Movie";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { AppLayout } from "./components/layouts/AppLayouts";
-
+import "./App.css";
+import { ErrorPage } from "./pages/ErrorPage";
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
