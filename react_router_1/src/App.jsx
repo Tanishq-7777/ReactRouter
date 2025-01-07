@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { About } from "./pages/About";
 import { Movie } from "./pages/Movie";
-import { Contact } from "./pages/Contact";
+import { Contact, contactData } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { AppLayout } from "./components/layouts/AppLayouts";
 import "./App.css";
@@ -38,6 +38,7 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+          action: contactData,
         },
       ],
     },
