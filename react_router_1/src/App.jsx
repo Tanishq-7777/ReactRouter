@@ -8,6 +8,8 @@ import "./App.css";
 import { ErrorPage } from "./pages/ErrorPage";
 import { getMoviesData } from "./api/GetApiData";
 import "./App.css";
+import { MoviesDetails } from "./components/UI/MoviesDetails";
+import { getMovieDetails } from "./api/GetMovieDetail";
 function App() {
   const router = createBrowserRouter([
     {
@@ -27,6 +29,11 @@ function App() {
           path: "/Movie",
           element: <Movie />,
           loader: getMoviesData,
+        },
+        {
+          path: "/movie/:movieID",
+          element: <MoviesDetails />,
+          loader: getMovieDetails,
         },
         {
           path: "/contact",

@@ -8,7 +8,7 @@ export function Header() {
           <div className="head container">
             <div className="head_txt">
               <p>
-                Get ThapNavLink Membership, 30-day return or refund guarantee.
+                Get TaniNavLink Membership, 30-day return or refund guarantee.
               </p>
             </div>
             <div className="sing_in_up">
@@ -21,7 +21,7 @@ export function Header() {
         <div className="container">
           <div className="navbar-brand">
             <NavLink to="index">
-              <p>ThapaFlix</p>
+              <p>TanishqFlix</p>
             </NavLink>
           </div>
 
