@@ -6,7 +6,7 @@ export function Movie() {
   console.log(moivesData);
   return (
     <>
-      <ul>
+      <ul className="container grid grid-four-cols">
         {moivesData.Search.map((curMovie) => {
           return <Card key={curMovie.imdbID} curMovie={curMovie} />;
         })}

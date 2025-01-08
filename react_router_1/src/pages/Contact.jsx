@@ -45,7 +45,7 @@ export function Contact() {
                       id="email"
                       required
                       autoComplete="off"
-                      placeholder="abc@thapa.com"
+                      placeholder="abc@tanishq.com"
                     />
                   </div>
                 </div>
